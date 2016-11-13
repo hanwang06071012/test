@@ -13,7 +13,7 @@ def hello():
 
 @app.route('/hello/')
 def hello():
-	return ("hello ,I want to push ,copy to master ... ")
+	return ("hello,copy to master ... ")
 
 if __name__ == "__main__":
 	app=Flask(__name__)
