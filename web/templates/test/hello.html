@@ -5,13 +5,12 @@
 	<title>Bootstrap 实例 - 文本框</title>
 	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
 	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script> 
-	<script src="/le_angu.js"></script
+	<script src="/le_angu.js"></script>
 </head>
 <body>
-<div ng-app="myApp",ng-controller="myCtrl">
-	<p>name:<span>[[ hanName ]]</span></p>
+<div>
 <form role="form" action= "{{url_for('test')}}",method='GET'>
 	<div class="form-group">
 		<label for="name">文本框</label>
@@ -24,14 +23,6 @@
 </form>
 </div>
 <script>
-var app = angular.module('myApp', [], function($interpolateProvider) { 
-	$interpolateProvider.startSymbol('[['); 
-	$interpolateProvider.endSymbol(']]'); 
-});
-
-app.controller('myCtrl', function($scope) {
-    $scope.hanName= "John";
-});
 </script>
 </body>
 </html>

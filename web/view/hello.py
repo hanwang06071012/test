@@ -11,10 +11,6 @@ def hello():
 	return render_template('/test/hello.html')
 
 
-@app.route('/hello/')
-def hello():
-	return ("hello,copy to master ... ")
-
 if __name__ == "__main__":
 	app=Flask(__name__)
 	app.run(host='0.0.0.0',port=5022)
